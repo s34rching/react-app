@@ -31,13 +31,13 @@ export const ContactUsPopup = ({ toggleContactUsPopup }) => {
     },
     {
       id: 2,
-      title: 'California',
+      title: 'Phoenix',
       selected: false,
       key: 'location',
     },
     {
       id: 3,
-      title: 'Izmir',
+      title: 'Berlin',
       selected: false,
       key: 'location',
     },
@@ -60,31 +60,31 @@ export const ContactUsPopup = ({ toggleContactUsPopup }) => {
       id: 1,
       title: 'Discounts and Promotions',
       selected: false,
-      key: 'location',
+      key: 'reason',
     },
     {
       id: 2,
       title: 'Products Quality',
       selected: false,
-      key: 'location',
+      key: 'reason',
     },
     {
       id: 3,
       title: 'Order Delivery',
       selected: false,
-      key: 'location',
+      key: 'reason',
     },
     {
       id: 4,
       title: 'Purchase Returns',
       selected: false,
-      key: 'location',
+      key: 'reason',
     },
     {
       id: 5,
       title: 'Improvements Request',
       selected: false,
-      key: 'location',
+      key: 'reason',
     },
   ];
 

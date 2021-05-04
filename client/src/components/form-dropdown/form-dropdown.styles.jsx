@@ -41,8 +41,13 @@ export const DropdownOptionButton = styled.button`
   font-size: 14px;
   text-align: left;
   padding: 5px;
-  margin-bottom: 2px;
+  margin: 1px 0;
   width: 100%;
+
+  &:hover {
+    background: cadetblue;
+    color: white;
+  }
 `;
 
 DropdownOptionButton.displayName = 'DropdownOptionButton';

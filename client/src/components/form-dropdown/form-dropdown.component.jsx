@@ -31,23 +31,21 @@ export const FormDropdown = ({ dropdownTitle, options }) => {
             : <FontAwesome name="angle-down" size="2x" />
         }
       </DropdownHeaderButton>
-      {isListOpen && (
-        <DropdownListContainer role="list">
-          {
-            options.map((item) => (
-              <DropdownOptionButton
-                type="button"
-                key={item.id}
-                onClick={() => selectItem(item)}
-              >
-                {item.title}
-                {' '}
-                {item.selected && <FontAwesome name="check" />}
-              </DropdownOptionButton>
-            ))
-          }
-        </DropdownListContainer>
-      )}
+      <DropdownListContainer isListOpen={isListOpen}>
+        {
+          options.map((item) => (
+            <DropdownOptionButton
+              type="button"
+              key={item.id}
+              onClick={() => selectItem(item)}
+            >
+              {item.title}
+              {' '}
+              {item.selected && <FontAwesome name="check" />}
+            </DropdownOptionButton>
+          ))
+        }
+      </DropdownListContainer>
     </DropdownWrapper>
   );
 };

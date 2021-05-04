@@ -9,9 +9,12 @@ export const DropdownWrapper = styled.div`
 DropdownWrapper.displayName = 'DropdownWrapper';
 
 export const DropdownHeaderButton = styled.button`
+  display: flex;
+  justify-content: space-between;
   background: white;
-  font-size: 18px;
+  font-size: 16px;
   width: 100%;
+  padding: 10px 10px;
 `;
 
 DropdownHeaderButton.displayName = 'DropdownHeaderButton';
@@ -35,7 +38,7 @@ export const DropdownOptionButton = styled.button`
   display: block;
   background: white;
   border: 1px groove slategrey;
-  font-size: 18px;
+  font-size: 14px;
   text-align: left;
   padding: 5px;
   margin-bottom: 2px;

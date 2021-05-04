@@ -27,8 +27,8 @@ export const FormDropdown = ({ dropdownTitle, options }) => {
         <div className="dd-header-title">{listTitle}</div>
         {
           isListOpen
-            ? <FontAwesome name="angle-up" size="2x" />
-            : <FontAwesome name="angle-down" size="2x" />
+            ? <FontAwesome name="angle-up" />
+            : <FontAwesome name="angle-down" />
         }
       </DropdownHeaderButton>
       <DropdownListContainer isListOpen={isListOpen}>

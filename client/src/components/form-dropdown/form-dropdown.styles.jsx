@@ -51,3 +51,9 @@ export const DropdownOptionButton = styled.button`
 `;
 
 DropdownOptionButton.displayName = 'DropdownOptionButton';
+
+export const DropdownHeaderButtonTitle = styled.div`
+  
+`;
+
+DropdownHeaderButtonTitle.displayName = 'DropdownHeaderButtonTitle';

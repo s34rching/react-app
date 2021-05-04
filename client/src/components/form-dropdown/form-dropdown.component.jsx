@@ -5,6 +5,7 @@ import {
   DropdownHeaderButton,
   DropdownListContainer,
   DropdownOptionButton,
+  DropdownHeaderButtonTitle,
 } from './form-dropdown.styles';
 
 export const FormDropdown = ({ dropdownTitle, options }) => {
@@ -48,7 +49,7 @@ export const FormDropdown = ({ dropdownTitle, options }) => {
           className="dd-header"
           onClick={() => toggleList({ ...listState, isListOpen: !isListOpen })}
         >
-          <div className="dd-header-title">{listTitle}</div>
+          <DropdownHeaderButtonTitle>{listTitle}</DropdownHeaderButtonTitle>
           {
             isListOpen
               ? <FontAwesome name="angle-up" />

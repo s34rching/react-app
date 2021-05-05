@@ -31,7 +31,7 @@ describe('Components: Footer', () => {
       expect(container.find('FooterLink[to="/contact"]').text()).toEqual('Contact Us');
       expect(container.find('FooterLink[to="/terms"]').text()).toEqual('Terms');
       expect(container.find('FooterLink[to="/privacy"]').text()).toEqual('Privacy');
-      expect(container.find('FooterLink[to="/"]').at(3).text()).toEqual('Accessibility Policy');
+      expect(container.find('FooterLink[to="/accessibility"]').text()).toEqual('Accessibility Policy');
     });
   });
 

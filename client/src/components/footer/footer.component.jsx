@@ -23,7 +23,7 @@ export const Footer = ({ currentUser }) => (
           <li><FooterLink to="/">Careers</FooterLink></li>
           <li><FooterLink to="/contact">Contact Us</FooterLink></li>
           <li><FooterLink to="/terms">Terms</FooterLink></li>
-          <li><FooterLink to="/">Privacy</FooterLink></li>
+          <li><FooterLink to="/privacy">Privacy</FooterLink></li>
           <li><FooterLink to="/">Accessibility Policy</FooterLink></li>
         </ul>
       </LinksColumnContainer>

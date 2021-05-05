@@ -19,6 +19,7 @@ const CheckoutPage = lazy(() => import('./pages/checkout/checkout.component'));
 const SigningPage = lazy(() => import('./pages/signing/signing.component'));
 const SearchResultsPage = lazy(() => import('./pages/search-results/search-results.component'));
 const TermsPage = lazy(() => import('./pages/terms/terms.component'))
+const PrivacyPolicyPage = lazy(() => import('./pages/privacy-policy/privacy-policy.component'))
 
 const App = ({ checkUserSession, currentUser }) => {
   useEffect(() => {
@@ -42,6 +43,7 @@ const App = ({ checkUserSession, currentUser }) => {
             <Route exact path="/checkout" component={CheckoutPage} />
             <Route path="/search" component={SearchResultsPage} />
             <Route path="/terms" component={TermsPage} />
+            <Route path="/privacy" component={PrivacyPolicyPage} />
           </Suspense>
         </ErrorBoundary>
       </Switch>

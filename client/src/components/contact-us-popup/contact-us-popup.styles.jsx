@@ -8,6 +8,12 @@ export const ContactUsPopupWrapper = styled.div`
   backdrop-filter: blur(15px);
   position: fixed;
   z-index: 1;
+  animation: modalFade 0.25s ease-in-out;
+
+  @keyframes modalFade {
+    from {transform: translateY(-50%);opacity: 0;}
+    to {transform: translateY(0);opacity: 1;}
+  }
 `;
 
 export const ContactUsPopupContainer = styled.div`

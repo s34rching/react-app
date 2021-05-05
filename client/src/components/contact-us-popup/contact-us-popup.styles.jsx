@@ -11,8 +11,12 @@ export const ContactUsPopupWrapper = styled.div`
   animation: modalFade 0.25s ease-in-out;
 
   @keyframes modalFade {
-    from {transform: translateY(-50%);opacity: 0;}
-    to {transform: translateY(0);opacity: 1;}
+    from {
+      transform: translateY(-50%);opacity: 0;
+    }
+    to {
+      transform: translateY(0);opacity: 1;
+    }
   }
 `;
 

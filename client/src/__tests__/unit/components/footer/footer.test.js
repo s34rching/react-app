@@ -29,8 +29,8 @@ describe('Components: Footer', () => {
     it('should render links', () => {
       expect(container.find('FooterLink[to="/"]').at(0).text()).toEqual('Careers');
       expect(container.find('FooterLink[to="/contact"]').text()).toEqual('Contact Us');
-      expect(container.find('FooterLink[to="/"]').at(1).text()).toEqual('Terms');
-      expect(container.find('FooterLink[to="/"]').at(2).text()).toEqual('Privacy');
+      expect(container.find('FooterLink[to="/terms"]').text()).toEqual('Terms');
+      expect(container.find('FooterLink[to="/privacy"]').text()).toEqual('Privacy');
       expect(container.find('FooterLink[to="/"]').at(3).text()).toEqual('Accessibility Policy');
     });
   });

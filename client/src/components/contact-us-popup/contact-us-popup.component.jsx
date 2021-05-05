@@ -145,7 +145,7 @@ export const ContactUsPopup = ({ toggleContactUsPopup }) => {
                 name="message"
                 label="message"
                 value={message}
-                rows="5"
+                rows="4"
                 handleChange={handleChange}
                 required
                 data-test="feedback-message"

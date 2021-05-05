@@ -27,7 +27,7 @@ export const ContactUsPopupContainer = styled.div`
   position: fixed;
   z-index: 2;
   left: 33%;
-  top: 15%;
+  top: 10%;
 `;
 
 ContactUsPopupContainer.displayName = 'ContactUsPopupContainer';

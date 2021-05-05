@@ -10,6 +10,7 @@ import Header from './components/header/header.component';
 import Footer from './components/footer/footer.component';
 import Spinner from './components/spinner/spinner.component';
 import ErrorBoundary from './components/error-boundary/error-boundary.component';
+import ScrollToTop from './components/scroll-to-top/scroll-to-top.component';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -32,22 +33,24 @@ const App = ({ checkUserSession, currentUser }) => {
       <GlobalStyle />
       <Header />
       <Switch>
-        <ErrorBoundary>
-          <Suspense fallback={<Spinner />}>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/shop" component={ShopPage} />
-            <Route
-              exact
-              path="/signing"
-              render={() => (currentUser ? (<Redirect to="/" />) : (<SigningPage />))}
-            />
-            <Route exact path="/checkout" component={CheckoutPage} />
-            <Route path="/search" component={SearchResultsPage} />
-            <Route path="/terms" component={TermsPage} />
-            <Route path="/privacy" component={PrivacyPolicyPage} />
-            <Route path="/accessibility" component={AccessibilityPolicyPage} />
-          </Suspense>
-        </ErrorBoundary>
+        <ScrollToTop>
+          <ErrorBoundary>
+            <Suspense fallback={<Spinner />}>
+              <Route exact path="/" component={HomePage} />
+              <Route path="/shop" component={ShopPage} />
+              <Route
+                exact
+                path="/signing"
+                render={() => (currentUser ? (<Redirect to="/" />) : (<SigningPage />))}
+              />
+              <Route exact path="/checkout" component={CheckoutPage} />
+              <Route path="/search" component={SearchResultsPage} />
+              <Route path="/terms" component={TermsPage} />
+              <Route path="/privacy" component={PrivacyPolicyPage} />
+              <Route path="/accessibility" component={AccessibilityPolicyPage} />
+            </Suspense>
+          </ErrorBoundary>
+        </ScrollToTop>
       </Switch>
       <Footer />
     </div>

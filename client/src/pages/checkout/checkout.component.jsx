@@ -40,7 +40,11 @@ export const CheckoutPage = ({ cartItems, total }) => (
       Your payment cards are
       <a href="https://stripe.com/docs/testing"> Stripe testing payment cards!</a>
     </TestWarningContainer>
-    <StripeCheckoutButton price={total} />
+    {
+      total
+        ? <StripeCheckoutButton price={total} />
+        : null
+    }
   </CheckoutPageContainer>
 );
 

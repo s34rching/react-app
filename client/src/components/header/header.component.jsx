@@ -12,7 +12,7 @@ import {
 import { selectCurrentUser } from '../../redux/user/user.selectors';
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 
-export const Header = ({ currentUser, hidden, signOutStart }) => (
+export const Header = ({ currentUser, isCartHidden, signOutStart }) => (
   <HeaderContainer data-test="header">
     <LogoContainer to="/" id="site-logo">
       <Logo />
@@ -29,7 +29,7 @@ export const Header = ({ currentUser, hidden, signOutStart }) => (
       <CartIcon />
     </OptionsContainer>
     {
-      hidden
+      isCartHidden
         ? null
         : <CartDropdown />
     }
@@ -38,7 +38,7 @@ export const Header = ({ currentUser, hidden, signOutStart }) => (
 
 export const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
-  hidden: selectCartHidden,
+  isCartHidden: selectCartHidden,
 });
 
 export const mapDispatchToProps = (dispatch) => ({

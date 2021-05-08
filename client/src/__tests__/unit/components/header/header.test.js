@@ -54,13 +54,13 @@ describe('Components: Header', () => {
     });
 
     it('should hide cart dropdown', () => {
-      wrapper.setProps({ hidden: true });
+      wrapper.setProps({ isCartHidden: true });
 
       expect(wrapper.find('withRouter(Connect(CartDropdown))')).toHaveLength(0);
     });
 
     it('should show cart dropdown', () => {
-      wrapper.setProps({ hidden: false });
+      wrapper.setProps({ isCartHidden: false });
 
       expect(wrapper.find('withRouter(Connect(CartDropdown))')).toHaveLength(1);
     });
@@ -69,7 +69,10 @@ describe('Components: Header', () => {
   describe('mapStateToProps', () => {
     it('should map state', () => {
       expect(mapStateToProps(initialState))
-        .toContainEntries([['currentUser', initialState.user.currentUser], ['hidden', initialState.cart.hidden]]);
+        .toContainEntries([
+          ['currentUser', initialState.user.currentUser],
+          ['isCartHidden', initialState.cart.hidden]
+        ]);
     });
   });
 

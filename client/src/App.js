@@ -22,7 +22,6 @@ const SearchResultsPage = lazy(() => import('./pages/search-results/search-resul
 const TermsPage = lazy(() => import('./pages/terms/terms.component'));
 const PrivacyPolicyPage = lazy(() => import('./pages/privacy-policy/privacy-policy.component'));
 const AccessibilityPolicyPage = lazy(() => import('./pages/accessibility-policy/accessibility-policy.component'));
-const LocationsPage = lazy(() => import('./pages/locations/locations.component'));
 
 const App = ({ checkUserSession, currentUser }) => {
   useEffect(() => {
@@ -49,7 +48,6 @@ const App = ({ checkUserSession, currentUser }) => {
               <Route path="/terms" component={TermsPage} />
               <Route path="/privacy" component={PrivacyPolicyPage} />
               <Route path="/accessibility" component={AccessibilityPolicyPage} />
-              <Route path="/locations" component={LocationsPage} />
             </Suspense>
           </ErrorBoundary>
         </ScrollToTop>

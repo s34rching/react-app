@@ -47,7 +47,11 @@ const locations = [
 
 export const ContactsPage = () => (
   <ContactsContainer>
-    <ContactsTitleContainer>Addresses and Phones</ContactsTitleContainer>
+    <ContactsTitleContainer>
+      <strong>
+        Addresses and Phones
+      </strong>
+    </ContactsTitleContainer>
     {
       locations.map(({
         id,

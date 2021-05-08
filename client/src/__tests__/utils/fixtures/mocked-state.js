@@ -216,6 +216,7 @@ const mockedState = {
     currentUser: { displayName: 'User User', id: 'qrw3wQ12ws', email: 'user@email.com' },
     error: { message: 'Some error occurred during some operation' },
   },
+  contactUs: { hidden: true },
 };
 
 module.exports = mockedState;

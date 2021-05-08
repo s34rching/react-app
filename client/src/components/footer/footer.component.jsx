@@ -2,10 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { selectCurrentUser } from '../../redux/user/user.selectors';
+import { selectContactUsHidden } from '../../redux/contact-us/contact-us.selectors';
 import { ReactComponent as TiktokLogo } from '../../static/tiktok.svg';
 import { ReactComponent as InstagramLogo } from '../../static/instagram.svg';
 import { ReactComponent as TwitterLogo } from '../../static/twitter.svg';
 import { ReactComponent as FacebookLogo } from '../../static/facebook.svg';
+import ContactUsPopup from '../contact-us-popup/contact-us-popup.component';
 import {
   FooterContainer,
   FooterColumnsContainer,
@@ -13,8 +15,9 @@ import {
   FooterLink,
   FooterExternalLink,
 } from './footer.styles';
+import { toggleContactUsPopup } from '../../redux/contact-us/contact-us.actions';
 
-export const Footer = ({ currentUser }) => (
+export const Footer = ({ currentUser, isContactUsPopupHidden, toggleContactUsPopup }) => (
   <FooterContainer data-test="footer">
     <FooterColumnsContainer>
       <LinksColumnContainer id="company-container">
@@ -47,7 +50,7 @@ export const Footer = ({ currentUser }) => (
               : <li><FooterLink to="/signing"><h4>SIGN UP</h4></FooterLink></li>
           }
           <li><FooterLink to="/"><h4>BECOME A MEMBER</h4></FooterLink></li>
-          <li><FooterLink to="/"><h4>SEND US FEEDBACK</h4></FooterLink></li>
+          <li><FooterLink as="div" onClick={toggleContactUsPopup} to="/"><h4>SEND US FEEDBACK</h4></FooterLink></li>
         </ul>
       </LinksColumnContainer>
       <LinksColumnContainer textAlign="right" blocks={3} float="right" id="smm-container">
@@ -58,11 +61,21 @@ export const Footer = ({ currentUser }) => (
         <FooterExternalLink href="https://facebook.com/"><FacebookLogo /></FooterExternalLink>
       </LinksColumnContainer>
     </FooterColumnsContainer>
+    {
+      isContactUsPopupHidden
+        ? null
+        : <ContactUsPopup />
+    }
   </FooterContainer>
 );
 
 export const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
+  isContactUsPopupHidden: selectContactUsHidden,
 });
 
-export default connect(mapStateToProps)(Footer);
+export const mapDispatchToProps = (dispatch) => ({
+  toggleContactUsPopup: () => dispatch(toggleContactUsPopup()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Footer);

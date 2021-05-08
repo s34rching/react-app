@@ -4,11 +4,11 @@ import { Footer, mapStateToProps } from '../../../../components/footer/footer.co
 import getMockedState from '../../../utils/mock-state-provider';
 
 describe('Components: Footer', () => {
-  const initialState = getMockedState(['user']);
+  const initialState = getMockedState(['user', 'contactUs']);
   let wrapper;
 
   beforeAll(() => {
-    wrapper = shallow(<Footer />);
+    wrapper = shallow(<Footer isContactUsPopupHidden />);
   });
 
   it('should render 4 link containers', () => {

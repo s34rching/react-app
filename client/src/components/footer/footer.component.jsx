@@ -50,7 +50,7 @@ export const Footer = ({ currentUser, isContactUsPopupHidden, toggleContactUsPop
               : <li><FooterLink to="/signing"><h4>SIGN UP</h4></FooterLink></li>
           }
           <li><FooterLink to="/"><h4>BECOME A MEMBER</h4></FooterLink></li>
-          <li><FooterLink as="div" onClick={toggleContactUsPopup} to="/"><h4>SEND US FEEDBACK</h4></FooterLink></li>
+          <li><FooterLink as="div" onClick={toggleContactUsPopup}><h4>SEND US FEEDBACK</h4></FooterLink></li>
         </ul>
       </LinksColumnContainer>
       <LinksColumnContainer textAlign="right" blocks={3} float="right" id="smm-container">

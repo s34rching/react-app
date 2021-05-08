@@ -25,9 +25,9 @@ export const Footer = ({ currentUser, isContactUsPopupHidden, toggleContactUsPop
         <ul>
           <li><FooterLink to="/">Careers</FooterLink></li>
           <li><FooterLink to="/contact">Contact Us</FooterLink></li>
-          <li><FooterLink to="/">Terms</FooterLink></li>
-          <li><FooterLink to="/">Privacy</FooterLink></li>
-          <li><FooterLink to="/">Accessibility Policy</FooterLink></li>
+          <li><FooterLink to="/terms">Terms</FooterLink></li>
+          <li><FooterLink to="/privacy">Privacy</FooterLink></li>
+          <li><FooterLink to="/accessibility">Accessibility Policy</FooterLink></li>
         </ul>
       </LinksColumnContainer>
       <LinksColumnContainer id="learn-more-container">

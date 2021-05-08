@@ -4,7 +4,7 @@ import { TextSection } from '../../components/text-section/text-section.componen
 const TermsPage = () => (
   <TextSection heading="Terms">
     <h3>
-      MOE terms and conditions for website use
+      Imogene terms and conditions for website use
     </h3>
     <p>
       Please read these Terms and Conditions For Website Use (the &quot;Terms and Conditions&quot;)

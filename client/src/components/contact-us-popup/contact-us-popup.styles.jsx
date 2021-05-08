@@ -12,10 +12,12 @@ export const ContactUsPopupWrapper = styled.div`
 
   @keyframes modalFade {
     from {
-      transform: translateY(-50%);opacity: 0;
+      transform: translateY(-50%);
+      opacity: 0;
     }
     to {
-      transform: translateY(0);opacity: 1;
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 `;

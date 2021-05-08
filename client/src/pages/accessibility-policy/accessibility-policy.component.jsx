@@ -7,14 +7,14 @@ const AccessibilityPolicyPage = () => (
       Our commitment to accessibility
     </h3>
     <p>
-      Krispy Kreme Doughnut Corporation (&quot;we&quot; or &quot;our&quot;)
+      Imogene (&quot;we&quot; or &quot;our&quot;)
       is committed to accessibility, diversity and inclusion. We strive
-      to make www.krispykreme.com and our mobile App
+      to make www.t-app-s34rching.herokuapp.com and our mobile App
       content accessible and user friendly and our efforts are ongoing. If you are
-      having difficulty viewing or navigating the content on www.krispykreme.com or
+      having difficulty viewing or navigating the content on www.t-app-s34rching.herokuapp.com or
       our mobile App, or notice any content, feature, or functionality that you believe
       is not fully accessible to people with disabilities, please call our Customer
-      Service team at (800) 457-4779 or email our team at accessibility@krispykreme.com
+      Service team at accessibility@t-app-s34rching.herokuapp.com
       with the words “Disabled Access” in the subject line and provide a description
       of the specific feature you feel is not fully accessible or a suggestion for
       improvement. We take your feedback seriously and will consider it as we

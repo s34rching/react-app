@@ -7,12 +7,12 @@ const PrivacyPolicyPage = () => (
       Protecting Your Privacy
     </h3>
     <p>
-      Reebok America, Inc. (&quot;Reebok&quot; or &quot;we&quot;, &quot;us&quot;,
+      Imogene, LLC. (&quot;Imogene&quot; or &quot;we&quot;, &quot;us&quot;,
       or &quot;our&quot;)
       is committed to protecting the privacy of your personal information. This Privacy Statement
       (the &quot;Statement&quot;) applies to all of the channels in the United States by
-      which Reebok collects, uses and/or shares your information, including
-      online channels (e.g., Reebok U.S. websites, mobile applications, and
+      which Imogene collects, uses and/or shares your information, including
+      online channels (e.g., Imogene U.S. websites, mobile applications, and
       social media pages, collectively referred to as the &quot;Website&quot;) and
       offline channels (e.g., in-store transactions and events in the U.S.).
 
@@ -28,7 +28,7 @@ const PrivacyPolicyPage = () => (
     </h3>
     <p>
       Except as disclosed below, we don’t sell, trade, give away, or rent your
-      personal information to any third party outside of Reebok. One of the basic
+      personal information to any third party outside of Imogene. One of the basic
       principles we&apos;ve tried to follow is to limit the information we collect
       from and share about you.
 
@@ -116,7 +116,7 @@ const PrivacyPolicyPage = () => (
       have opted to not receive promotional communications. We may also
       combine your offline purchase history data with personal information
       we collect online so that we may effectively market our products and
-      services to you. Combining data allows Reebok to update and correct
+      services to you. Combining data allows Imogene to update and correct
       the information contained in our database and to provide you with
       product recommendations and special offers.
 
@@ -134,7 +134,7 @@ const PrivacyPolicyPage = () => (
     </h3>
     <p>
       Except as described in this Statement, we will not disclose
-      your personal information outside of Reebok without your consent.
+      your personal information outside of Imogene without your consent.
       We may, however, share the personal information we collect
       about you in limited circumstances, including:
 
@@ -172,7 +172,7 @@ const PrivacyPolicyPage = () => (
           necessary to protect our rights or property and/or comply with a
           judicial proceeding, court order, or legal process served.
           If we believe in good faith that the disclosure of information is
-          necessary to protect the personal safety of Reebok employees,
+          necessary to protect the personal safety of Imogene employees,
           customers or the public, and to enforce our Privacy Statement and Terms of Use.
         </li>
         <li>
@@ -216,9 +216,9 @@ const PrivacyPolicyPage = () => (
     </h3>
     <p>
       The Website that links to this Statement is intended for users in the United States.
-      If you choose to provide Reebok with your information, you consent to the transfer,
+      If you choose to provide Imogene with your information, you consent to the transfer,
       storage, and processing of that information on our servers located in the United
-      States and around the world. The information collected by Reebok may be subject
+      States and around the world. The information collected by Imogene may be subject
       to international and U.S. state and federal law. If you are accessing our Website
       from outside the U.S., please be advised that you are transferring your personal
       information to us in the United States where data protection and privacy laws may
@@ -266,10 +266,10 @@ const PrivacyPolicyPage = () => (
       We will update this Statement as needed to reflect changes in our services
       and customer feedback. When we post changes to this Statement, we will
       revise the &quot;last updated&quot; date at the top of the Statement. If there are
-      material changes to this Statement or in how Reebok will use your personal
+      material changes to this Statement or in how Imogene will use your personal
       information, we will notify you by prominently posting a notice of such
       changes prior to implementing the change. We encourage you to periodically
-      review this Statement to remain informed of how Reebok is protecting
+      review this Statement to remain informed of how Imogene is protecting
       your information.
     </p>
   </TextSection>

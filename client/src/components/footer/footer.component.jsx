@@ -43,7 +43,7 @@ export const Footer = ({ currentUser, isContactUsPopupHidden, toggleContactUsPop
       </LinksColumnContainer>
       <LinksColumnContainer id="engagement-container">
         <ul>
-          <li><FooterLink to="/"><h4>FIND A STORE</h4></FooterLink></li>
+          <li><FooterLink to="/locations"><h4>FIND A STORE</h4></FooterLink></li>
           {
             currentUser
               ? null

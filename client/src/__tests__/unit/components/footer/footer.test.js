@@ -82,10 +82,10 @@ describe('Components: Footer', () => {
     it('should render proper links if user is not logged in', () => {
       wrapper.setProps({ currentUser: null });
 
-      expect(container.find('FooterLink[to="/"]').at(0).text()).toEqual('FIND A STORE');
+      expect(container.find('FooterLink[to="/locations"]').text()).toEqual('FIND A STORE');
       expect(container.find('FooterLink[to="/signing"]').text()).toEqual('SIGN UP');
-      expect(container.find('FooterLink[to="/"]').at(1).text()).toEqual('BECOME A MEMBER');
-      expect(container.find('FooterLink[to="/"]').at(2).text()).toEqual('SEND US FEEDBACK');
+      expect(container.find('FooterLink[to="/"]').at(0).text()).toEqual('BECOME A MEMBER');
+      expect(container.find('FooterLink[as="div"]').text()).toEqual('SEND US FEEDBACK');
     });
 
     it('should render less links if user is logged in', () => {

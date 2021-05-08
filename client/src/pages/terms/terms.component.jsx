@@ -7,9 +7,9 @@ const TermsPage = () => (
       MOE terms and conditions for website use
     </h3>
     <p>
-      Please read these Terms and Conditions For Website Use (the “Terms and Conditions”)
+      Please read these Terms and Conditions For Website Use (the &quot;Terms and Conditions&quot;)
       carefully before using this website and any Imogene content on social media sites
-      (including without limitation Facebook and Twitter) (together, the “Site”).
+      (including without limitation Facebook and Twitter) (together, the &quot;Site&quot;).
       These Terms and Conditions apply to all visits and use of the Site,
       as well as to the Content (as defined below), information, recommendations,
       products and/or services provided to you on or through the Site.

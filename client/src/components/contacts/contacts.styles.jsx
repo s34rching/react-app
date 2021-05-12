@@ -43,13 +43,13 @@ export const ContactItemContainer = styled.div`
 ContactItemContainer.displayName = 'ContactItemContainer';
 
 export const ContactItemLogoContainer = styled.div`
-  width: 10%
+  width: 50px;
+  margin-right: 20px;
 `;
 
 ContactItemLogoContainer.displayName = 'ContactItemLogoContainer';
 
 export const ContactItemDataContainer = styled.div`
-  width: 90%;
   ${getMapLinksAdditionalStyles}
 `;
 

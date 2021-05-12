@@ -1,4 +1,20 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+const MapLinkStyles = css`
+  a:link {
+    text-decoration: underline;
+  }
+
+  a:visited {
+    color: grey;
+  }
+
+  a:hover {
+    color: cadetblue;
+  }
+`;
+
+const getMapLinksAdditionalStyles = (props) => ((props.isMapLink) ? MapLinkStyles : null);
 
 export const ContactCardContainer = styled.div`
   margin: 20px 0;
@@ -33,7 +49,8 @@ export const ContactItemLogoContainer = styled.div`
 ContactItemLogoContainer.displayName = 'ContactItemLogoContainer';
 
 export const ContactItemDataContainer = styled.div`
-  width: 90%
+  width: 90%;
+  ${getMapLinksAdditionalStyles}
 `;
 
 ContactItemDataContainer.displayName = 'ContactItemDataContainer';

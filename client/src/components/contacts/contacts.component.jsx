@@ -18,7 +18,7 @@ export const ContactCardComponent = ({ city, address, map, phone, email, working
       <ContactItemLogoContainer>
         <FontAwesomeIcon icon={faMapMarkedAlt} size="2x" />
       </ContactItemLogoContainer>
-      <ContactItemDataContainer>
+      <ContactItemDataContainer isMapLink>
         <a href={map} target="blank">{address}</a>
       </ContactItemDataContainer>
     </ContactItemContainer>

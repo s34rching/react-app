@@ -16,7 +16,7 @@ describe('Homepage', () => {
     });
 
     it("TA-68: User should be able to navigate to 'Contact' page", () => {
-      Homepage.openContactPage();
+      Homepage.openAboutUsPage();
       expect(browser.getUrl()).toContain(contactLink);
     });
 

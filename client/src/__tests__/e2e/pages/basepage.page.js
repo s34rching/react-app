@@ -14,8 +14,8 @@ class BasePage {
     return this.header.$('a=SHOP');
   }
 
-  get contactLink() {
-    return this.header.$('a=CONTACT');
+  get aboutUsLink() {
+    return this.header.$('a=ABOUT US');
   }
 
   get signInButton() {
@@ -54,8 +54,8 @@ class BasePage {
     this.shopLink.click();
   }
 
-  openContactPage() {
-    this.contactLink.click();
+  openAboutUsPage() {
+    this.aboutUsLink.click();
   }
 
   openSigningPage() {

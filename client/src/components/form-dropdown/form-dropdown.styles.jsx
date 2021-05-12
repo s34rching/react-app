@@ -15,6 +15,7 @@ export const DropdownHeaderButton = styled.button`
   font-size: 16px;
   width: 100%;
   padding: 10px 10px;
+  font-family: 'Open Sans Condensed';
 `;
 
 DropdownHeaderButton.displayName = 'DropdownHeaderButton';
@@ -43,6 +44,7 @@ export const DropdownOptionButton = styled.button`
   padding: 5px;
   margin: 1px 0;
   width: 100%;
+  font-family: 'Open Sans Condensed';
 
   &:hover {
     background: cadetblue;

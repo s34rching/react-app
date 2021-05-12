@@ -8,7 +8,7 @@ const locations = [
     city: 'New York',
     address: '115 East 23rd Street Floor Seven New York, NY 10010 USA',
     phone: '1-844-373-7459',
-    email: 'imogene@https://t-app-s34rching.herokuapp.com/',
+    email: 'imogene.ny@t-app-s34rching.herokuapp.com',
     workingHours: 'Sun - Sat: 10am - 7pm',
   },
   {
@@ -16,7 +16,7 @@ const locations = [
     city: 'Dublin',
     address: '115 East 23rd Street Floor Seven New York, NY 10010 USA',
     phone: '1-844-373-7459',
-    email: 'imogene@https://t-app-s34rching.herokuapp.com/',
+    email: 'imogene.d@t-app-s34rching.herokuapp.com',
     workingHours: 'Sun - Sat: 10am - 7pm',
   },
   {
@@ -24,7 +24,7 @@ const locations = [
     city: 'Phoenix',
     address: '115 East 23rd Street Floor Seven New York, NY 10010 USA',
     phone: '1-844-373-7459',
-    email: 'imogene@https://t-app-s34rching.herokuapp.com/',
+    email: 'imogene.ph@t-app-s34rching.herokuapp.com',
     workingHours: 'Sun - Sat: 10am - 7pm',
   },
   {
@@ -32,7 +32,7 @@ const locations = [
     city: 'Berlin',
     address: '115 East 23rd Street Floor Seven New York, NY 10010 USA',
     phone: '1-844-373-7459',
-    email: 'imogene@https://t-app-s34rching.herokuapp.com/',
+    email: 'imogene.b@t-app-s34rching.herokuapp.com',
     workingHours: 'Sun - Sat: 10am - 7pm',
   },
   {
@@ -40,7 +40,7 @@ const locations = [
     city: 'Oslo',
     address: '115 East 23rd Street Floor Seven New York, NY 10010 USA',
     phone: '1-844-373-7459',
-    email: 'imogene@https://t-app-s34rching.herokuapp.com/',
+    email: 'imogene.o@t-app-s34rching.herokuapp.com',
     workingHours: 'Sun - Sat: 10am - 7pm',
   },
 ];

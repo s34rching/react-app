@@ -31,7 +31,7 @@ export const ContactUsPopup = ({ toggleContactUsPopup }) => {
     },
     {
       id: 2,
-      title: 'Phoenix',
+      title: 'Helsinki',
       selected: false,
       key: 'location',
     },

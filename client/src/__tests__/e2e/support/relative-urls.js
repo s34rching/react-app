@@ -1,7 +1,7 @@
 const relativeUrls = {
   checkout: '/checkout',
   collection: (routeName) => `/shop/${routeName}`,
-  contact: '/contact',
+  aboutUs: '/about-us',
   search: (searchQuery) => `/search?q=${searchQuery}`,
   shop: '/shop',
   signing: '/signing',

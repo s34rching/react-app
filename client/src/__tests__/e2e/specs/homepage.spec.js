@@ -2,7 +2,7 @@ const Homepage = require('../pages/homepage.page');
 const ShopPage = require('../pages/shop.page');
 const getMockedState = require('../../utils/mock-state-provider');
 const { getRandomSection } = require('../service/data-providers');
-const { shop: shopLink, contact: contactLink, signing: signingLink } = require('../support/relative-urls');
+const { shop: shopLink, aboutUs: aboutUsLink, signing: signingLink } = require('../support/relative-urls');
 
 describe('Homepage', () => {
   beforeEach(() => {

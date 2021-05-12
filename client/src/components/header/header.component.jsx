@@ -20,7 +20,7 @@ export const Header = ({ currentUser, isCartHidden, signOutStart }) => (
     <OptionsContainer>
       <SearchBar />
       <OptionLink to="/shop">SHOP</OptionLink>
-      <OptionLink to="/contact">CONTACT</OptionLink>
+      <OptionLink to="/about-us">ABOUT US</OptionLink>
       {
         currentUser
           ? <OptionLink as="div" onClick={signOutStart} data-test="sign-out-button">SIGN OUT</OptionLink>

@@ -27,7 +27,7 @@ describe('Components: Header', () => {
     });
 
     it('should have link to "Contact"', () => {
-      expect(wrapper.find('OptionLink[to="/contact"]').text()).toEqual('CONTACT');
+      expect(wrapper.find('OptionLink[to="/about-us"]').text()).toEqual('ABOUT US');
     });
 
     it('should have link to "Sign In" if user is not logged in', () => {
@@ -71,7 +71,7 @@ describe('Components: Header', () => {
       expect(mapStateToProps(initialState))
         .toContainEntries([
           ['currentUser', initialState.user.currentUser],
-          ['isCartHidden', initialState.cart.hidden]
+          ['isCartHidden', initialState.cart.hidden],
         ]);
     });
   });

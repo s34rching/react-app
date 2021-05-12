@@ -16,15 +16,15 @@ const MapLinkStyles = css`
 
 const getMapLinksAdditionalStyles = (props) => ((props.isMapLink) ? MapLinkStyles : null);
 
-export const ContactCardContainer = styled.div`
+export const LocationCardContainer = styled.div`
   margin: 20px 0;
   padding-left: 30px;
   border-left: black 1px solid;
 `;
 
-ContactCardContainer.displayName = 'ContactItemContainer';
+LocationCardContainer.displayName = 'LocationCardContainer';
 
-export const ContactCardDataContainer = styled.div`
+export const LocationCardDataContainer = styled.div`
   width: 30%;
   float: left;
 
@@ -33,7 +33,7 @@ export const ContactCardDataContainer = styled.div`
   }
 `;
 
-ContactCardDataContainer.displayName = 'ContactCardDataContainer';
+LocationCardDataContainer.displayName = 'LocationCardDataContainer';
 
 export const ShopPanoramaContainer = styled.div`
   width: 70%;
@@ -48,15 +48,15 @@ export const ShopPanoramaContainer = styled.div`
 
 ShopPanoramaContainer.displayName = 'ShopPanoramaContainer';
 
-export const ContactCardTitleContainer = styled.div`
+export const LocationCardTitleContainer = styled.div`
   width: fit-content;
   font-size: 25px;
   margin-bottom: 20px;
 `;
 
-ContactCardTitleContainer.displayName = 'ContactCardTitleContainer';
+LocationCardTitleContainer.displayName = 'LocationCardTitleContainer';
 
-export const ContactItemContainer = styled.div`
+export const LocationItemContainer = styled.div`
   font-size: 20px;
   margin: 5px 0;
   display: flex;
@@ -64,17 +64,17 @@ export const ContactItemContainer = styled.div`
   align-items: center;
 `;
 
-ContactItemContainer.displayName = 'ContactItemContainer';
+LocationItemContainer.displayName = 'LocationItemContainer';
 
-export const ContactItemLogoContainer = styled.div`
+export const LocationItemLogoContainer = styled.div`
   width: 50px;
   margin-right: 20px;
 `;
 
-ContactItemLogoContainer.displayName = 'ContactItemLogoContainer';
+LocationItemLogoContainer.displayName = 'LocationItemLogoContainer';
 
-export const ContactItemDataContainer = styled.div`
+export const LocationItemDataContainer = styled.div`
   ${getMapLinksAdditionalStyles}
 `;
 
-ContactItemDataContainer.displayName = 'ContactItemDataContainer';
+LocationItemDataContainer.displayName = 'LocationItemDataContainer';

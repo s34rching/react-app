@@ -1,6 +1,11 @@
 import React from 'react';
-import ContactCardComponent from '../../components/contacts/contacts.component';
-import { ContactsContainer, ContactsTitleContainer } from './contacts.styles';
+import LocationCardComponent from '../../components/location-card/location-card.component';
+import { LocationsContainer, LocationsTitleContainer } from './locations.styles';
+import berlinBg from '../../images/locations/berlin.jpg';
+import dublinBg from '../../images/locations/dublin.jpg';
+import helsinkiBg from '../../images/locations/helsinki.jpg';
+import newYorkBg from '../../images/locations/new-york.jpg';
+import osloBg from '../../images/locations/oslo.jpg';
 
 const locations = [
   {
@@ -11,7 +16,7 @@ const locations = [
     phone: '1-844-373-9999',
     email: 'imogene.ny@t-app-s34rching.herokuapp.com',
     workingHours: 'Sun - Sat: 10am - 7pm',
-    bgImage: 'https://www.michaelwharris.net/wp-content/uploads/2016/11/Boulder-Sunset-Cropped-2000x200.jpg',
+    bgImage: newYorkBg,
   },
   {
     id: 2,
@@ -21,17 +26,17 @@ const locations = [
     phone: '353-1-875-9999',
     email: 'imogene.d@t-app-s34rching.herokuapp.com',
     workingHours: 'Sun - Sat: 10am - 7pm',
-    bgImage: 'https://elkhornandareafoundation.ca/wp-content/uploads/2018/01/farm-field-iStock-2000x200.jpg',
+    bgImage: dublinBg,
   },
   {
     id: 3,
-    city: 'Phoenix',
-    address: '6800 N 95th Ave, Glendale, AZ 85305, United States',
-    map: 'https://www.google.com/maps/place/Tanger+Outlets+Phoenix/@33.5339288,-112.2761235,15z/data=!4m9!1m2!2m1!1sphoenix+malls!3m5!1s0x872b404b387c2537:0xe18fe824e86918fd!8m2!3d33.5339288!4d-112.2673688!15sCg1waG9lbml4IG1hbGxzWh4KDXBob2VuaXggbWFsbHMiDXBob2VuaXggbWFsbHOSAQtvdXRsZXRfbWFsbJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSbk5tVnRZMHRuRUFF',
-    phone: '1-623-877-9999',
+    city: 'Helsinki',
+    address: 'Aleksanterinkatu 9, 00100 Helsinki, Finland',
+    map: 'https://www.google.com/maps/place/Kauppakeskus+Kamppi+Helsinki/@60.1655191,24.9346607,15z/data=!3m1!5s0x46920a34a8b9d14d:0x9df3c32c363f1b70!4m9!1m2!2m1!1shelsinki+malls!3m5!1s0x0:0xb8bece3c9e19511a!8m2!3d60.1691569!4d24.9332277!15sCg5oZWxzaW5raSBtYWxsc1oXCgVtYWxscyIOaGVsc2lua2kgbWFsbHOSAQ9zaG9wcGluZ19jZW50ZXI',
+    phone: '358-40-6519999',
     email: 'imogene.ph@t-app-s34rching.herokuapp.com',
     workingHours: 'Sun - Sat: 10am - 7pm',
-    bgImage: 'https://www.truthcomposer.com/wp-content/uploads/2015/04/fall_leaves2-2000x200-2000x200.jpg',
+    bgImage: helsinkiBg,
   },
   {
     id: 4,
@@ -41,7 +46,7 @@ const locations = [
     phone: '49-30-20629999',
     email: 'imogene.b@t-app-s34rching.herokuapp.com',
     workingHours: 'Sun - Sat: 10am - 7pm',
-    bgImage: 'https://qualstaffresources.com/wp-content/uploads/2018/06/bg-palm-view-2000x200.png',
+    bgImage: berlinBg,
   },
   {
     id: 5,
@@ -51,17 +56,17 @@ const locations = [
     phone: '47-22-17-99-99',
     email: 'imogene.o@t-app-s34rching.herokuapp.com',
     workingHours: 'Sun - Sat: 10am - 7pm',
-    bgImage: 'https://takeartclasses.com/wp-content/uploads/2015/12/New-Background_v2-2000x200.jpg',
+    bgImage: osloBg,
   },
 ];
 
-export const ContactsPage = () => (
-  <ContactsContainer>
-    <ContactsTitleContainer>
+export const LocationsPage = () => (
+  <LocationsContainer>
+    <LocationsTitleContainer>
       <strong>
         Addresses and Phones
       </strong>
-    </ContactsTitleContainer>
+    </LocationsTitleContainer>
     {
       locations.map(({
         id,
@@ -73,7 +78,7 @@ export const ContactsPage = () => (
         workingHours,
         bgImage,
       }) => (
-        <ContactCardComponent
+        <LocationCardComponent
           key={id}
           city={city}
           address={address}
@@ -85,7 +90,7 @@ export const ContactsPage = () => (
         />
       ))
     }
-  </ContactsContainer>
+  </LocationsContainer>
 );
 
-export default ContactsPage;
+export default LocationsPage;

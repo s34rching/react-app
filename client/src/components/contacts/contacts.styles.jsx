@@ -24,6 +24,30 @@ export const ContactCardContainer = styled.div`
 
 ContactCardContainer.displayName = 'ContactItemContainer';
 
+export const ContactCardDataContainer = styled.div`
+  width: 30%;
+  float: left;
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
+`;
+
+ContactCardDataContainer.displayName = 'ContactCardDataContainer';
+
+export const ShopPanoramaContainer = styled.div`
+  width: 70%;
+  float: left;
+  background-image: ${({ bgImage }) => `url(${bgImage})`};
+  height: 200px;
+
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+`;
+
+ShopPanoramaContainer.displayName = 'ShopPanoramaContainer';
+
 export const ContactCardTitleContainer = styled.div`
   width: fit-content;
   font-size: 25px;

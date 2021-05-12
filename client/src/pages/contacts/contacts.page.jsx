@@ -11,6 +11,7 @@ const locations = [
     phone: '1-844-373-9999',
     email: 'imogene.ny@t-app-s34rching.herokuapp.com',
     workingHours: 'Sun - Sat: 10am - 7pm',
+    bgImage: 'https://www.michaelwharris.net/wp-content/uploads/2016/11/Boulder-Sunset-Cropped-2000x200.jpg',
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const locations = [
     phone: '353-1-875-9999',
     email: 'imogene.d@t-app-s34rching.herokuapp.com',
     workingHours: 'Sun - Sat: 10am - 7pm',
+    bgImage: 'https://elkhornandareafoundation.ca/wp-content/uploads/2018/01/farm-field-iStock-2000x200.jpg',
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ const locations = [
     phone: '1-623-877-9999',
     email: 'imogene.ph@t-app-s34rching.herokuapp.com',
     workingHours: 'Sun - Sat: 10am - 7pm',
+    bgImage: 'https://www.truthcomposer.com/wp-content/uploads/2015/04/fall_leaves2-2000x200-2000x200.jpg',
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ const locations = [
     phone: '49-30-20629999',
     email: 'imogene.b@t-app-s34rching.herokuapp.com',
     workingHours: 'Sun - Sat: 10am - 7pm',
+    bgImage: 'https://qualstaffresources.com/wp-content/uploads/2018/06/bg-palm-view-2000x200.png',
   },
   {
     id: 5,
@@ -47,6 +51,7 @@ const locations = [
     phone: '47-22-17-99-99',
     email: 'imogene.o@t-app-s34rching.herokuapp.com',
     workingHours: 'Sun - Sat: 10am - 7pm',
+    bgImage: 'https://takeartclasses.com/wp-content/uploads/2015/12/New-Background_v2-2000x200.jpg',
   },
 ];
 
@@ -66,6 +71,7 @@ export const ContactsPage = () => (
         phone,
         email,
         workingHours,
+        bgImage,
       }) => (
         <ContactCardComponent
           key={id}
@@ -75,6 +81,7 @@ export const ContactsPage = () => (
           phone={phone}
           email={email}
           workingHours={workingHours}
+          bgImage={bgImage}
         />
       ))
     }

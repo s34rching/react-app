@@ -15,9 +15,9 @@ describe('Homepage', () => {
       expect(browser.getUrl()).toContain(shopLink);
     });
 
-    it("TA-68: User should be able to navigate to 'Contact' page", () => {
+    it("TA-68: User should be able to navigate to 'About Us' page", () => {
       Homepage.openAboutUsPage();
-      expect(browser.getUrl()).toContain(contactLink);
+      expect(browser.getUrl()).toContain(aboutUsLink);
     });
 
     it("TA-69: User should be able to navigate to 'Signing' page", () => {

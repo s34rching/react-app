@@ -11,7 +11,7 @@ import {
   ContactItemDataContainer,
 } from './contacts.styles';
 
-export const ContactCardComponent = ({ city, address, phone, email, workingHours }) => (
+export const ContactCardComponent = ({ city, address, map, phone, email, workingHours }) => (
   <ContactCardContainer>
     <ContactCardTitleContainer>{city}</ContactCardTitleContainer>
     <ContactItemContainer>
@@ -19,7 +19,7 @@ export const ContactCardComponent = ({ city, address, phone, email, workingHours
         <FontAwesomeIcon icon={faMapMarkedAlt} size="2x" />
       </ContactItemLogoContainer>
       <ContactItemDataContainer>
-        <span>{address}</span>
+        <a href={map} target="blank">{address}</a>
       </ContactItemDataContainer>
     </ContactItemContainer>
     <ContactItemContainer>

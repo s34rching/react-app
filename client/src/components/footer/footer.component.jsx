@@ -17,7 +17,7 @@ import {
 } from './footer.styles';
 import { toggleContactUsPopup } from '../../redux/contact-us/contact-us.actions';
 
-export const Footer = ({ currentUser, isContactUsPopupHidden, toggleContactUsPopup }) => (
+export const Footer = ({ isContactUsPopupHidden, toggleContactUsPopup }) => (
   <FooterContainer data-test="footer">
     <FooterColumnsContainer>
       <LinksColumnContainer id="company-container">

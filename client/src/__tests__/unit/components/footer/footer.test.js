@@ -73,26 +73,19 @@ describe('Components: Footer', () => {
       expect(container.find('h4')).toEqual({});
     });
 
-    it('should render all links if user is not logged in', () => {
+    it('should render all links', () => {
       wrapper.setProps({ currentUser: null });
 
       expect(container.find('FooterLink')).toHaveLength(4);
     });
 
-    it('should render proper links if user is not logged in', () => {
+    it('should render proper links', () => {
       wrapper.setProps({ currentUser: null });
 
       expect(container.find('FooterLink[to="/locations"]').text()).toEqual('FIND A STORE');
-      expect(container.find('FooterLink[to="/signing"]').text()).toEqual('SIGN UP');
+      expect(container.find('FooterLink').at(1).text()).toEqual('SIGN UP FOR EMAIL');
       expect(container.find('FooterLink[to="/"]').at(0).text()).toEqual('BECOME A MEMBER');
       expect(container.find('FooterLink[as="div"]').text()).toEqual('SEND US FEEDBACK');
-    });
-
-    it('should render less links if user is logged in', () => {
-      wrapper.setProps({ currentUser: initialState.user.currentUser });
-      const updatedContainer = wrapper.find('LinksColumnContainer').at(2);
-
-      expect(updatedContainer.find('FooterLink')).toHaveLength(3);
     });
 
     it('should NOT render "SIGN UP" link if user is not logged in', () => {

@@ -44,11 +44,7 @@ export const Footer = ({ currentUser, isContactUsPopupHidden, toggleContactUsPop
       <LinksColumnContainer id="engagement-container">
         <ul>
           <li><FooterLink to="/locations"><h4>FIND A STORE</h4></FooterLink></li>
-          {
-            currentUser
-              ? null
-              : <li><FooterLink to="/signing"><h4>SIGN UP</h4></FooterLink></li>
-          }
+          <li><FooterLink><h4>SIGN UP FOR EMAIL</h4></FooterLink></li>
           <li><FooterLink to="/"><h4>BECOME A MEMBER</h4></FooterLink></li>
           <li><FooterLink as="div" onClick={toggleContactUsPopup}><h4>SEND US FEEDBACK</h4></FooterLink></li>
         </ul>

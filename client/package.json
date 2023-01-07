@@ -59,13 +59,13 @@
     ]
   },
   "devDependencies": {
-    "@wdio/cli": "^6.11.3",
-    "@wdio/local-runner": "^6.11.3",
-    "@wdio/mocha-framework": "^6.11.0",
-    "@wdio/spec-reporter": "^6.11.0",
-    "@wdio/sync": "^6.11.0",
-    "chai": "^4.3.1",
-    "chromedriver": "^90.0.0",
+    "@playwright/test": "^1.29.1",
+    "@wdio/browser-runner": "^8.0.13",
+    "@wdio/cli": "^8.0.13",
+    "@wdio/globals": "^8.0.13",
+    "@wdio/mocha-framework": "^8.0.13",
+    "chromedriver": "^108.0.0",
+    "cypress": "^12.2.0",
     "enzyme-to-json": "^3.6.1",
     "eslint": "6.8.0",
     "eslint-config-airbnb": "18.2.0",
@@ -73,11 +73,11 @@
     "eslint-plugin-jsx-a11y": "^6.3.0",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "4.0.0",
-    "eslint-plugin-wdio": "^6.6.0",
     "jest-extended": "^0.11.5",
     "moment": "^2.29.1",
+    "playwright": "1.29.1",
     "react-scripts": "3.4.3",
-    "wdio-chromedriver-service": "^6.0.4"
+    "webdriverio": "8.0.13"
   },
   "jest": {
     "snapshotSerializers": [

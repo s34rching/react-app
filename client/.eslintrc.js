@@ -7,7 +7,6 @@ module.exports = {
   extends: [
     'airbnb',
     'plugin:react/recommended',
-    "plugin:wdio/recommended",
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -18,12 +17,15 @@ module.exports = {
   },
   plugins: [
     'react',
-    'wdio',
   ],
   globals: {
     $: 'readonly',
+    cy: 'readonly',
   },
   rules: {
     "class-methods-use-this": 0,
+    "object-curly-spacing": ["error", "always"],
+    "array-bracket-spacing": ["error", "always"],
+    "prefer-destructuring": ["error", {"object": false, "array": false}]
   },
 };

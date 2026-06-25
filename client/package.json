@@ -40,8 +40,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "wdio:run": "npx wdio src/__tests__/e2e/config/wdio.conf.js"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -59,13 +58,7 @@
     ]
   },
   "devDependencies": {
-    "@wdio/cli": "^6.11.3",
-    "@wdio/local-runner": "^6.11.3",
-    "@wdio/mocha-framework": "^6.11.0",
-    "@wdio/spec-reporter": "^6.11.0",
-    "@wdio/sync": "^6.11.0",
     "chai": "^4.3.1",
-    "chromedriver": "^90.0.0",
     "enzyme-to-json": "^3.6.1",
     "eslint": "6.8.0",
     "eslint-config-airbnb": "18.2.0",
@@ -76,8 +69,7 @@
     "eslint-plugin-wdio": "^6.6.0",
     "jest-extended": "^0.11.5",
     "moment": "^2.29.1",
-    "react-scripts": "3.4.3",
-    "wdio-chromedriver-service": "^6.0.4"
+    "react-scripts": "3.4.3"
   },
   "jest": {
     "snapshotSerializers": [

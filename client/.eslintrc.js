@@ -6,8 +6,7 @@ module.exports = {
   },
   extends: [
     'airbnb',
-    'plugin:react/recommended',
-    "plugin:wdio/recommended",
+    'plugin:react/recommended'
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -17,8 +16,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
-    'react',
-    'wdio',
+    'react'
   ],
   globals: {
     $: 'readonly',

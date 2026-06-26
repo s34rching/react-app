@@ -1,4 +1,5 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
     mocha: true,
@@ -6,8 +7,6 @@ module.exports = {
   },
   extends: [
     'airbnb',
-    'plugin:react/recommended',
-    "plugin:wdio/recommended",
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -16,10 +15,6 @@ module.exports = {
     ecmaVersion: 9,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    'wdio',
-  ],
   globals: {
     $: 'readonly',
   },

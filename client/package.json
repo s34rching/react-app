@@ -10,22 +10,22 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "axios": "^0.21.0",
+    "axios": "^1.18.1",
     "chance": "^1.1.7",
     "dayjs": "^1.10.4",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
-    "firebase": "^7.21.0",
+    "firebase": "^12.15.0",
     "jest-styled-components": "^7.0.3",
     "lodash": "^4.17.20",
     "lodash.memoize": "^4.1.2",
-    "node-sass": "^4.14.1",
+    "sass": "^1.101.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-fontawesome": "^1.7.1",
     "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
+    "react-scripts": "5.0.1",
     "react-stripe-checkout": "^2.6.3",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
@@ -40,8 +40,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "wdio:run": "npx wdio src/__tests__/e2e/config/wdio.conf.js"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -59,13 +58,6 @@
     ]
   },
   "devDependencies": {
-    "@wdio/cli": "^6.11.3",
-    "@wdio/local-runner": "^6.11.3",
-    "@wdio/mocha-framework": "^6.11.0",
-    "@wdio/spec-reporter": "^6.11.0",
-    "@wdio/sync": "^6.11.0",
-    "chai": "^4.3.1",
-    "chromedriver": "^90.0.0",
     "enzyme-to-json": "^3.6.1",
     "eslint": "6.8.0",
     "eslint-config-airbnb": "18.2.0",
@@ -73,11 +65,7 @@
     "eslint-plugin-jsx-a11y": "^6.3.0",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "4.0.0",
-    "eslint-plugin-wdio": "^6.6.0",
-    "jest-extended": "^0.11.5",
-    "moment": "^2.29.1",
-    "react-scripts": "3.4.3",
-    "wdio-chromedriver-service": "^6.0.4"
+    "jest-extended": "^0.11.5"
   },
   "jest": {
     "snapshotSerializers": [
